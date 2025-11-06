@@ -1,0 +1,144 @@
+import React from 'react';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
+
+export default function App() {
+  return (
+    <ScrollView style={styles.container}>
+      {/* HEADER */}
+      <View style={styles.header}>
+        <Text style={styles.title}>🔧 MECHATRONIC PROFILE</Text>
+        <Text style={styles.subtitle}>Where Code Meets the Engine</Text>
+      </View>
+
+      {/* INFO CARDS */}
+      <View style={styles.card}>
+        <Text style={styles.label}>Name:</Text>
+        <Text style={styles.info}>Lanz Kaiser M. Ligsa</Text>
+      </View>
+
+      <View style={styles.card}>
+        <Text style={styles.label}>Age:</Text>
+        <Text style={styles.info}>20</Text>
+      </View>
+
+      <View style={styles.card}>
+        <Text style={styles.label}>Course/Year/Section:</Text>
+        <Text style={styles.info}>BS Computer Science 3-4</Text>
+      </View>
+
+      <View style={styles.card}>
+        <Text style={styles.label}>About Me:</Text>
+        <Text style={styles.info}>
+          I’m a 3rd-year Computer Science student passionate about combining 
+          automotive mechanics with technology. I enjoy coding systems that can 
+          enhance engine diagnostics, automation, and vehicle monitoring. 
+          I love building cars, riding motorcycles, and creating tech-driven solutions.
+        </Text>
+      </View>
+
+      <View style={styles.card}>
+        <Text style={styles.label}>Achievements:</Text>
+        <Text style={styles.info}>
+          🏆 Tertiary Academic Awardee{'\n'}
+          🏅 High School & Senior High School Academic Awardee{'\n'}
+          🥇 SHS with High Honor (Best in Work Immersion){'\n'}
+          🎓 College SY 2024-2025 Dean’s Lister
+        </Text>
+      </View>
+
+      <View style={styles.card}>
+        <Text style={styles.label}>Skills:</Text>
+        <Text style={styles.info}>
+          💻 Python, HTML, CSS, Java{'\n'}
+          🎥 Video Editing & Photography{'\n'}
+          🔩 Automotive Diagnostics & Electronics{'\n'}
+          🚘 Driving & Machine Maintenance
+        </Text>
+      </View>
+
+      {/* FOOTER */}
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>⚙️ ENGINEERED WITH CODE ⚙️</Text>
+        <Text style={styles.footerNote}>© 2025 Kayseeer | Laboratory 2</Text>
+      </View>
+    </ScrollView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#0B0C10',
+    padding: 20,
+  },
+  header: {
+    alignItems: 'center',
+    marginVertical: 20,
+    paddingVertical: 15,
+    backgroundColor: '#1F2833',
+    borderRadius: 12,
+    borderWidth: 2,
+    borderColor: '#45A29E',
+    shadowColor: '#66FCF1',
+    shadowOpacity: 0.5,
+    shadowOffset: { width: 0, height: 3 },
+    shadowRadius: 6,
+  },
+  title: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    color: '#66FCF1',
+    textShadowColor: '#0FF',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 8,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#C5C6C7',
+    marginTop: 5,
+    fontStyle: 'italic',
+  },
+  card: {
+    backgroundColor: '#1F2833',
+    borderLeftWidth: 6,
+    borderLeftColor: '#C3073F', 
+    marginVertical: 10,
+    padding: 15,
+    borderRadius: 12,
+    shadowColor: '#000',
+    shadowOpacity: 0.4,
+    shadowOffset: { width: 0, height: 3 },
+    shadowRadius: 4,
+  },
+  label: {
+    color: '#66FCF1',
+    fontWeight: 'bold',
+    fontSize: 16,
+    textTransform: 'uppercase',
+  },
+  info: {
+    color: '#C5C6C7',
+    marginTop: 5,
+    lineHeight: 20,
+  },
+  footer: {
+    alignItems: 'center',
+    marginTop: 30,
+    paddingVertical: 15,
+    borderTopWidth: 1,
+    borderTopColor: '#45A29E',
+  },
+  footerText: {
+    color: '#66FCF1',
+    fontWeight: 'bold',
+    fontSize: 14,
+    letterSpacing: 1,
+    textShadowColor: '#0FF',
+    textShadowRadius: 6,
+  },
+  footerNote: {
+    color: '#888',
+    fontSize: 12,
+    marginTop: 5,
+  },
+});
